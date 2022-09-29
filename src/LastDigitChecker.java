@@ -8,7 +8,7 @@ public class LastDigitChecker {
         int lastDigit2 = arg2 % 10;
         int lastDigit3 = arg3 % 10;
 
-        return lastDigit1 == lastDigit2 || lastDigit2 == lastDigit3 || lastDigit1 == lastDigit3;
+        return lastDigit1 == lastDigit2 && lastDigit2 == lastDigit3 && lastDigit1 == lastDigit3;
     }
 
     public static boolean isValid(int number) {
@@ -19,7 +19,7 @@ public class LastDigitChecker {
         System.out.println(hasSameLastDigit(978, 48, 64));
         System.out.println(hasSameLastDigit(9, 109, 909));
         System.out.println(hasSameLastDigit(77, -1, 27));
-        System.out.println(hasSameLastDigit(11, 232, 971));
-        System.out.println(hasSameLastDigit(972, 48, 62));
+        System.out.println(hasSameLastDigit(11, 231, 971));
+        System.out.println(hasSameLastDigit(972, 42, 62));
     }
 }
